@@ -31,12 +31,12 @@ const MySpan = styled.span`
 `;
 
 const MyLine = styled.div`
-  position: absolute;
-  width: 700px;
+  position: sticky;
+  width: 800px;
   height: 1px;
   background-color: white;
-  right: 900px;
-  /* top: 50px; */
+  margin-right: -150px;
+  margin-left: 10px;
   z-index: 1;
 `;
 
