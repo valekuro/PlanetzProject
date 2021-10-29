@@ -18,7 +18,7 @@ const NavbarWrapper = styled.div`
   width: fit-content;
   padding-left: 200px;
   padding-right: 100px;
-  height: 100px;
+  height: 200px;
   font-size: 1.5rem;
   background-color: darkblue;
   color: white;
