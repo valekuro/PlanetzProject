@@ -7,3 +7,12 @@ body {
 .numbers {
   font-weight: 800;
 }
+
+.title {
+  cursor: pointer;
+}
+
+.title:hover {
+  border-bottom: 1px solid white;
+  margin-top: 1px;
+}

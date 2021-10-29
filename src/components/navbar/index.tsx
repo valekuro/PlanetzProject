@@ -45,19 +45,19 @@ const Navbar = () => {
       <img style={{ marginLeft: "50px" }} src={logo} alt="logo" />
       <MyLine />
       <NavbarWrapper>
-        <div>
+        <div className="title">
           <MySpan className="numbers">00</MySpan>
           <MySpan>HOME</MySpan>
         </div>
-        <div>
+        <div className="title">
           <MySpan className="numbers">01</MySpan>
           <MySpan>DESTINATION</MySpan>
         </div>
-        <div>
+        <div className="title">
           <MySpan className="numbers">02</MySpan>
           <MySpan>CREW</MySpan>
         </div>
-        <div>
+        <div className="title">
           <MySpan className="numbers">03</MySpan>
           <MySpan>TECHNOLOGY</MySpan>
         </div>
