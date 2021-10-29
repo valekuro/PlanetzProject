@@ -27,6 +27,7 @@ const NavbarWrapper = styled.div`
 
 const MySpan = styled.span`
   margin: 0 10px;
+  padding: 38px 0;
 `;
 
 const MyLine = styled.div`
