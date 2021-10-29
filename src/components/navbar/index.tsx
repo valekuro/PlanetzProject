@@ -25,6 +25,10 @@ const NavbarWrapper = styled.div`
   z-index: 0;
 `;
 
+const MyNumberSpan = styled.span`
+  font-weight: 800;
+`;
+
 const MySpan = styled.span`
   margin: 0 10px;
   padding: 70px 0;
@@ -40,28 +44,38 @@ const MyLine = styled.div`
   z-index: 1;
 `;
 
+const TitleContainer = styled.div`
+  cursor: pointer;
+  margin-right: 50px;
+  &:hover {
+    padding: 82px 0;
+    border-bottom: 3px solid white;
+    margin-top: 3px;
+  }
+`;
+
 const Navbar = () => {
   return (
     <BigWrapper>
       <img style={{ marginLeft: "50px" }} src={logo} alt="logo" />
       <MyLine />
       <NavbarWrapper>
-        <div className="title">
-          <MySpan className="numbers">00</MySpan>
+        <TitleContainer>
+          <MyNumberSpan>00</MyNumberSpan>
           <MySpan>HOME</MySpan>
-        </div>
-        <div className="title">
-          <MySpan className="numbers">01</MySpan>
+        </TitleContainer>
+        <TitleContainer>
+          <MyNumberSpan>01</MyNumberSpan>
           <MySpan>DESTINATION</MySpan>
-        </div>
-        <div className="title">
-          <MySpan className="numbers">02</MySpan>
+        </TitleContainer>
+        <TitleContainer>
+          <MyNumberSpan>02</MyNumberSpan>
           <MySpan>CREW</MySpan>
-        </div>
-        <div className="title">
-          <MySpan className="numbers">03</MySpan>
+        </TitleContainer>
+        <TitleContainer>
+          <MyNumberSpan>03</MyNumberSpan>
           <MySpan>TECHNOLOGY</MySpan>
-        </div>
+        </TitleContainer>
       </NavbarWrapper>
     </BigWrapper>
   );
