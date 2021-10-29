@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import logo from "../../assets/shared/logo.svg";
+import { useHistory } from "react-router";
 
 const BigWrapper = styled.div`
   position: relative;
@@ -54,24 +55,25 @@ const TitleContainer = styled.div`
 `;
 
 export const Navbar = () => {
+  const history = useHistory();
   return (
     <BigWrapper>
       <img style={{ marginLeft: "50px" }} src={logo} alt="logo" />
       <MyLine />
       <NavbarWrapper>
-        <TitleContainer>
+        <TitleContainer onClick={() => history.push("/")}>
           <MyNumberSpan>00</MyNumberSpan>
           <MySpan>HOME</MySpan>
         </TitleContainer>
-        <TitleContainer>
+        <TitleContainer onClick={() => history.push("/destination")}>
           <MyNumberSpan>01</MyNumberSpan>
           <MySpan>DESTINATION</MySpan>
         </TitleContainer>
-        <TitleContainer>
+        <TitleContainer onClick={() => history.push("/crew")}>
           <MyNumberSpan>02</MyNumberSpan>
           <MySpan>CREW</MySpan>
         </TitleContainer>
-        <TitleContainer>
+        <TitleContainer onClick={() => history.push("/technology")}>
           <MyNumberSpan>03</MyNumberSpan>
           <MySpan>TECHNOLOGY</MySpan>
         </TitleContainer>
