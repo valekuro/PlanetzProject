@@ -13,7 +13,7 @@ body {
 }
 
 .title:hover {
-  padding: 86px 0;
-  border-bottom: 3px solid black;
+  padding: 82px 0;
+  border-bottom: 3px solid white;
   margin-top: 3px;
 }
