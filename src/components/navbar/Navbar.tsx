@@ -13,7 +13,6 @@ const NavbarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: absolute; */
   right: 0px;
   width: fit-content;
   padding-left: 200px;
@@ -54,7 +53,7 @@ const TitleContainer = styled.div`
   }
 `;
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <BigWrapper>
       <img style={{ marginLeft: "50px" }} src={logo} alt="logo" />
@@ -80,5 +79,3 @@ const Navbar = () => {
     </BigWrapper>
   );
 };
-
-export default Navbar;
